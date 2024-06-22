@@ -19,12 +19,12 @@ objtwo.roll="d"
 objtwo.sub= `f`
 
 const finalobj = Object.assign({},objone,objtwo)  //one way to do it
-console.log(finalobj)
-console.log(objone)
-console.log(objtwo)
+// console.log(finalobj)
+// console.log(objone)
+// console.log(objtwo)
 
 const lasts = {...objone,...objtwo}      //another way. this one is trendy
-console.log(lasts)
+//console.log(lasts)
 ///////////////////////////////////////////////////////////////////////////////
 //iteraring over keys and values in a object
 const zomatouser = {
@@ -36,7 +36,7 @@ const zomatouser = {
 ///////////////////////////////////////////////////////////////////////////////
 //array of objects
 let keysOfZomatoUsers = Object.values(zomatouser)
-console.log(keysOfZomatoUsers)
+//console.log(keysOfZomatoUsers)
 
 const arrayofusers = [{
         name :"ashu",
@@ -55,4 +55,13 @@ const arrayofusers = [{
         phone : 9616686179
 }]
 
-console.log(arrayofusers[2].favcuisine)
+//console.log(arrayofusers[2].favcuisine)
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//destructing object
+const course = {
+        coursename : "javascriptoneshot",
+        courseprice : 999,
+        courseinstructor : "hitesh"
+}
+const {courseinstructor : teacher} = course
+console.log(teacher)
